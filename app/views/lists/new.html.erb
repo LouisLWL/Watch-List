@@ -1,0 +1,7 @@
+<h2> Add a new List </h2>
+
+<%= form_for(@list) do |list| %>
+  <%= list.label :name %>
+  <%= list.text_field :name %>
+  <%= list.submit "Add list", class: "btn btn-primary" %>
+<% end %>
